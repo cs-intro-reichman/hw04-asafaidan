@@ -52,10 +52,10 @@ public class MyString {
                     }   
                 }          
                 if (res == true) {
-                    return res;   
-            }
-            i++;
+                    return true;   
+                }
         }
+        i++;
         }
         }
         return res;
