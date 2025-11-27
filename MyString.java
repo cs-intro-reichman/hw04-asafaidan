@@ -37,26 +37,26 @@ public class MyString {
             return true;
         }
         if (str1.length() >= str2.length()) {
-        while (i < str1.length()) {
-            int z = i;
-            if (str1.charAt(i) == str2.charAt(0)) {
-                res = true;
-                for (int j = 1; j < str2.length(); j++) {
-                    if (z + 1 >= str1.length()) {
-                    res = false;
-                    break;
-                }
+            while (i < str1.length()) {
+                int z = i;
+                if (str1.charAt(i) == str2.charAt(0)) {
+                    res = true;
+                    for (int j = 1; j < str2.length(); j++) {
+                        if (z + 1 >= str1.length()) {
+                        res = false;
+                        break;
+                    }
                     if (str1.charAt(z += 1) != str2.charAt(j)) {   
-                    res = false;
-                    break;
+                        res = false;
+                        break;
                     }   
-                }          
-                if (res == true) {
-                    return true;   
+                    }          
+                    if (res == true) {
+                        return true;   
+                    }
                 }
-        }
-        i++;
-        }
+                i++;
+            }
         }
         return res;
     }

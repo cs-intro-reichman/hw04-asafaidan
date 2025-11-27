@@ -101,9 +101,9 @@ public class ArrCharOps {
         for (int i = 0; i < arr1.length; i++) {
             res [i] = charAt(arr1, i);
         } 
-            for (int j = 0; j < arr2.length; j++) {
-                 res [arr1.length + j] = charAt(arr2, j);
-            }
+        for (int j = 0; j < arr2.length; j++) {
+             res [arr1.length + j] = charAt(arr2, j);
+        }
         return res;
     }
 

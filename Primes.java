@@ -9,21 +9,21 @@ public class Primes {
             primeNumbers[i] = true;
             i++;
         }   
-            int p = 2;
-            while (p <= Math.sqrt(n)) {
-                if (primeNumbers[p]) {
-                    int z = 2;
-                    while (p * z <= n) {
-                        primeNumbers[p * z] = false;
-                        z++;
-                    }
-                }
-                p++;
+        int p = 2;
+        while (p <= Math.sqrt(n)) {
+            if (primeNumbers[p]) {
+                int z = 2;
+                while (p * z <= n) {
+                    primeNumbers[p * z] = false;
+                    z++;
             }
+            }
+            p++;
+        }
         for (int j = 0; j <= n; j++) {
             if (primeNumbers[j] == true) {
                 primeCount += 1;
-            System.out.println(j);  
+                System.out.println(j);  
             }
         }
         int primePercentage = (int) 100 * primeCount/n;
